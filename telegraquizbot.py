@@ -68,16 +68,16 @@ dfexcel=pd.read_excel('test.xlsx')
 df2=pd.read_excel('telegram.xlsx')
 sor=pd.read_excel("merkez_bankasi.xlsx")
 
-updater = Updater("1989147614:AAHL-LmGLahobeLAJKUakLY3KRjfEeSfsDg")
-bot = telepot.Bot('1989147614:AAHL-LmGLahobeLAJKUakLY3KRjfEeSfsDg')
-chat_id1 = "-1001480725025" #banquiz
-chat_id2 = "-1001593134678" 
-chat_id3 = "-1001511873455" #deneme
+updater = Updater("***************************")
+bot = telepot.Bot('**************************')
+chat_id1 = "***************" #banquiz
+chat_id2 = "***************" 
+chat_id3 = "*************" #deneme
 
 #telegram id
 
 
-chat_id11="1507938293"
+chat_id11="*******************"
 
 # bot.sendMessage(chat_id1,"Merhaba Arkadaşlar 5 dakika sonra test başlayacaktır.")
 
@@ -253,7 +253,7 @@ def BanQuizTest(update: Update, context: CallbackContext) -> None: #bunu kullan�
     
     print(gelen3)
     
-    if gelen3==1507938293 or gelen3==1087968824:
+    if gelen3==******** or gelen3==***********:
         
         
         bot.sendMessage(id_bul,"Bu deneme "+str(sorusayisi)+" sorudan oluşmaktadır.")
@@ -412,12 +412,7 @@ def BanQuizSoru(update: Update, context: CallbackContext) -> None: #bunu kullan�
             
         }
             context.bot_data.update(payload)
-        # global a
-        # a=a+1    
-        # dfexcel['a'].loc[1,1]=str(questions)
-        # dfexcel['b'].loc[2,2]=str(message.message_id)
-        # dfexcel['c'].loc[3,3]=str(update.effective_chat.id)
-        #time.sleep(20)
+
         
         
             
@@ -705,7 +700,7 @@ def BanQuizYardım(update: Update, context: CallbackContext) -> None:
 def main() -> None:
     """Run bot."""
     # Create the Updater and pass it your bot's token.
-    updater = Updater("1989147614:AAHL-LmGLahobeLAJKUakLY3KRjfEeSfsDg")
+    updater = Updater("*******************")
     dispatcher = updater.dispatcher
     dispatcher.add_handler(CommandHandler('BanQuizYardım', BanQuizYardım))
     dispatcher.add_handler(CommandHandler('BanQuizDeneme', BanQuizDeneme))
